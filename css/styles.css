@@ -1,0 +1,71 @@
+/*Voy a definir una paleta de colores
+Los que inician con dos puntos son pseudoselectores, y son elementos
+que no existen como tal en html
+*/
+/*Se le conoce como custom propertys
+y cuando se llamen se hara como: var(--primario);
+*/
+:root {
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario:#304F1F;
+    --secundario:#C9C73A;
+    --uaem: olive;
+
+    /*Se tiene paleta de colores pero se puede guardar cualquier valor
+    es como las variables en programación.
+    --fuente-principal: 3.8rem;
+
+    */
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;/* 1rem = 10px */
+    font-family: 'Lexend', sans-serif;
+}
+
+.titulo span{
+    font-size: 2rem;
+    color: olive;
+}
+
+.contenedor{
+    width: 120rem;
+    /*
+    margin-right: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    */
+
+    /*
+    margin: 0 auto 0 auto;
+    */
+
+    margin: 0 auto; /*css ya sabe que si solo hay dos valores el primero es el de arriba y abajo y el siguiente es el valor de la derecha y la izquierda*/
+}
+
+.nav-baground{
+    background-color: var(--uaem);
+}
+
+.navegacionPrincipal{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacionPrincipal a {
+    color: var(--blanco);
+    text-decoration: none;
+}
